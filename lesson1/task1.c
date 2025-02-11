@@ -70,6 +70,29 @@ void task5(){
   }
 }
 
+void task6(){
+  int n, tw, th, fo;
+  scanf("%d", &n);
+  tw = 0;
+  th = 0;
+  fo = 0;
+
+  if (n % 2 == 0){
+    tw = n / 2;
+  }
+  if (n % 3 == 0){
+
+    th = n / 3;
+  }
+  if (n % 4 == 0){
+    fo = n / 4;
+  }
+  printf("4 seats: %d, 3 setats: %d, 2 seats: %d\n", fo, th, tw);
+
+
+  
+}
+
 void task7(){
   float x;
   scanf("%f", &x);
@@ -95,6 +118,79 @@ void task8(){
   }
 }
 
+void task9(){
+  double t;
+  scanf("%lf", &t);
+  int m;
+  double s;
+  m = t / 60;
+  s = t - m *60;
+  printf("%d minute(s) %lf seconde(s)", m, s);
+
+
+}
+
+void task10(){
+  int t;
+  scanf("%d", &t);
+  if (t < -150 || t > 120){
+    printf("Ne legit");
+  }else{
+    printf("legit");
+  }
+
+}
+
+void task11(){
+  float o;
+  scanf("%f", &o);
+  if (o < 0.15000000){
+    printf("Time to switch on emergency system");
+
+  }else{
+    printf("Everething is fine, oxygen level is %f", o);
+
+
+  }
+}
+
+void task12(){
+  int a;
+  scanf("%d", &a);
+  if (a < -180 || a > 180){
+    printf("Everething is not fine");
+  }else{
+    printf("Everething is fine");
+
+
+  }
+}
+
+void task13(){
+  int n;
+  scanf("%d", &n);
+  if (n % 2 != 0){
+    printf("Nelza");
+
+  }else{
+    printf("Mozno");
+  }
+
+}
+
+void task14(){
+  int m;
+  scanf("%d", &m);
+  float res = m * 0.1666667;
+  printf("Wight on the moon %f", res);
+}
+
+void task15(){
+  int m, v;
+  scanf("%d%d", &m, &v);
+  int res = m * 1024 / v / 60;
+  printf("%d minutes(s)", res);
+}
 
 int main(int argc, char **argv){
 
@@ -103,23 +199,61 @@ int main(int argc, char **argv){
     case 1:
     task1();
     break;
+
     case 2:
     task2();
     break;
+
     case 3:
     task3();
     break;
+
     case 4:
     task4();
     break;
+
     case 5:
     task5();
     break;
+
+    case 6:
+    task6();
+    break;
+
     case 7:
     task7();
     break;
+
     case 8:
     task8();
+    break;
+
+    case 9:
+    task9();
+    break;
+
+    case 10:
+    task10();
+    break;
+
+    case 11:
+    task11();
+    break;
+    
+    case 12:
+    task12();
+    break;
+
+    case 13:
+    task13();
+    break;
+
+    case 14:
+    task14();
+    break;
+
+    case 15:
+    task15();
     break;
 }
 return 0;
